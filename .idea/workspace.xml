@@ -3,6 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+  </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
@@ -21,7 +24,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea34e40d-67e1-45de-8ed5-3e596ed829ce" name="Changes" comment="" />
+    <list default="true" id="ea34e40d-67e1-45de-8ed5-3e596ed829ce" name="Changes" comment="Commit test Feb 22nd">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/DEVLOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/program_1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/program_1.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,12 +42,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tmorrison6794/program-1.git",
-    "accountId": "8911dd6a-cab7-43ca-8d29-5899799fd88f"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tmorrison6794&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tmorrison6794/program-1.git&quot;,
+    &quot;accountId&quot;: &quot;8911dd6a-cab7-43ca-8d29-5899799fd88f&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../program_1/main.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -67,6 +81,7 @@
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "RunOnceActivity.west.config.association.type.startup.service": "true",
@@ -99,8 +114,18 @@
       <option name="presentableId" value="Default" />
       <updated>1771822696264</updated>
       <workItem from="1771822697429" duration="68000" />
-      <workItem from="1771822769002" duration="1042000" />
+      <workItem from="1771822769002" duration="2786000" />
+      <workItem from="1771970673935" duration="391000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit test Feb 22nd">
+      <option name="closed" value="true" />
+      <created>1771823864095</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771823864095</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +135,10 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit test Feb 22nd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit test Feb 22nd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
