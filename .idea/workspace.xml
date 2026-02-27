@@ -24,9 +24,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea34e40d-67e1-45de-8ed5-3e596ed829ce" name="Changes" comment="Commit test Feb 22nd">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/DEVLOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+    <list default="true" id="ea34e40d-67e1-45de-8ed5-3e596ed829ce" name="Changes" comment="Commit #2 Febuary 24th">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/program_1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/program_1.cpp" afterDir="false" />
     </list>
@@ -88,6 +86,10 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "/Users/thomasmorrison/CLionProjects/untitled3/main.cpp",
     "org.rust.first.attach.projects": "true",
     "vue.rearranger.settings.migration": "true"
@@ -115,7 +117,9 @@
       <updated>1771822696264</updated>
       <workItem from="1771822697429" duration="68000" />
       <workItem from="1771822769002" duration="2786000" />
-      <workItem from="1771970673935" duration="391000" />
+      <workItem from="1771970673935" duration="693000" />
+      <workItem from="1771988098827" duration="210000" />
+      <workItem from="1772158441647" duration="622000" />
     </task>
     <task id="LOCAL-00001" summary="Commit test Feb 22nd">
       <option name="closed" value="true" />
@@ -125,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771823864095</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit #2 Febuary 24th">
+      <option name="closed" value="true" />
+      <created>1771971265649</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771971265649</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +150,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit test Feb 22nd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit test Feb 22nd" />
+    <MESSAGE value="Commit #2 Febuary 24th" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #2 Febuary 24th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

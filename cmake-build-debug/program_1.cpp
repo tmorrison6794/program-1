@@ -31,5 +31,38 @@ class MonopolySpace {
     bool isEqual(MonopolySpace other) {
         return propertyName==other.propertyName && propertyColor==other.propertyColor && rent==other.rent;
     }
+    void print() {
+        cout<<propertyName<< "|" <<propertyColor << "|$"<<value<<"| Rent $"<< rent;
+    }
 
 };
+template <typename T>
+class Node {
+public:
+    T data;
+    Node<T>* nextNode;
+    Node(T value) {
+        data=value;
+        nextNode=nullptr;
+    }
+};
+template <typename T>
+class CircularLinkedList {
+private:
+    Node<T>* headNode;
+    Node<T>* tailNode;
+
+    Node<T>*playerNode;
+    int nodeCount;
+    int passGoCount;
+
+public:
+    CircularLinkedList() {
+        headNode=nullptr;
+        tailNode=nullptr;
+        playerNode=nullptr;
+        nodeCount=0;
+        passGoCount=0;
+    }
+};
+
