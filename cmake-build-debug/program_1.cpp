@@ -64,5 +64,24 @@ public:
         nodeCount=0;
         passGoCount=0;
     }
-};
 
+
+bool addSpace(T value) {
+        if (nodeCount==MAX_SPACES) {
+            cout<<"Max space reached"<<endl;
+            return false;
+        }
+        Node<T>* newNode = new Node<T>(value);
+        if (headNode==nullptr) {
+            headNode=newNode;
+            tailNode=headNode;
+            playerNode=newNode;
+            newNode->nextNode=headNode;
+        }else {
+            tailNode->nextNode=newNode;
+            newNode->nextNode=tailNode;
+            tailNode=newNode;
+        }
+        nodeCount++;
+        return true;
+    }
