@@ -1,0 +1,12 @@
+Entry 1
+Date: 2026-03-02
+Entry type: Bug fix
+Task worked on: Core A: Add a Space with Capacity Enforcement
+Issue: I accidentally had the addSpace outside of the brackets of the CircularLinkedList class
+Error message: After using an online compiler, I kept seeing a compile error and the nodeCount was not
+declared. I traced what I had written and found my issue.
+Fix/resolution: There was a misplaced bracket and I fixed it by moving my addSpace into the body of the
+class and it works as intended now.
+Commits: Fixed misplaced bracket, found the issue before committing.
+
+

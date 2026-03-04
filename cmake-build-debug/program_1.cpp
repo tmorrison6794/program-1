@@ -66,7 +66,7 @@ public:
     }
 
 
-bool addSpace(T value) {
+    bool addSpace(T value) {
         if (nodeCount==MAX_SPACES) {
             cout<<"Max space reached"<<endl;
             return false;
@@ -79,9 +79,21 @@ bool addSpace(T value) {
             newNode->nextNode=headNode;
         }else {
             tailNode->nextNode=newNode;
-            newNode->nextNode=tailNode;
+            newNode->nextNode=headNode;
             tailNode=newNode;
         }
         nodeCount++;
         return true;
     }
+
+int addMany(vector<T> values) {
+    if (values.size()==0) {
+        cout<<"Empty vector"<<endl;
+    }
+    int added=0;
+    for (int i=0;i<values.size();i++) {
+        if (!addSpace(values[i])) break;
+        added++;
+    }
+    return added;
+};
