@@ -24,9 +24,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea34e40d-67e1-45de-8ed5-3e596ed829ce" name="Changes" comment="Commit #4 March 2nd">
+    <list default="true" id="ea34e40d-67e1-45de-8ed5-3e596ed829ce" name="Changes" comment="Commit #5 March 4th">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DEVLOG" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DEVLOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/program_1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/program_1.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +122,8 @@
       <workItem from="1772158441647" duration="682000" />
       <workItem from="1772488114245" duration="3811000" />
       <workItem from="1772514237294" duration="341000" />
-      <workItem from="1772647811399" duration="1631000" />
+      <workItem from="1772647811399" duration="1725000" />
+      <workItem from="1772762789592" duration="1701000" />
     </task>
     <task id="LOCAL-00001" summary="Commit test Feb 22nd">
       <option name="closed" value="true" />
@@ -157,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772490307821</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit #5 March 4th">
+      <option name="closed" value="true" />
+      <created>1772649724144</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772649724144</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +181,8 @@
     <MESSAGE value="Commit #2 Febuary 24th" />
     <MESSAGE value="Commit #3 Febuary 26th" />
     <MESSAGE value="Commit #4 March 2nd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit #4 March 2nd" />
+    <MESSAGE value="Commit #5 March 4th" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #5 March 4th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

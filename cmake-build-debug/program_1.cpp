@@ -86,14 +86,43 @@ public:
         return true;
     }
 
-int addMany(vector<T> values) {
-    if (values.size()==0) {
-        cout<<"Empty vector"<<endl;
+    int addMany(vector<T> values) {
+        if (values.size()==0) {
+            cout<<"Empty vector"<<endl;
+        }
+        int added=0;
+        for (int i=0;i<values.size();i++) {
+            if (!addSpace(values[i])) break;
+            added++;
+        }
+        return added;
     }
-    int added=0;
-    for (int i=0;i<values.size();i++) {
-        if (!addSpace(values[i])) break;
-        added++;
+    void movePlayer(int steps) {
+        if (headNode==nullptr) {
+            cout<<"movePlayer unwritten"<<endl;
+            return;
+        }
+        for (int i=0;i<steps;i++) {
+            playerNode=playerNode->nextNode;
+            if (playerNode==headNode) {
+                passGoCount++;
+            }
+        }
     }
-    return added;
-};
+    int getPassGoCount() {
+        return passGoCount;
+    }
+    void printFromPlayer(int count) {
+        if (playerNode==nullptr) {
+            cout<<"printFromPlayer unwritten"<<endl;
+            return;
+        }
+        int limit=(count<MAX_SPACES)?count:MAX_SPACES;
+        Node<T>* currentNode=playerNode;
+        for (int i=0;i<limit;i++) {
+            cout<<"["<<i+1<<"]";
+            currentNode->data.print();
+            cout<<endl;
+            currentNode=currentNode->nextNode;
+        }
+    }
