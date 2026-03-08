@@ -156,7 +156,7 @@ public:
         while (currentNode!=headNode) {
             if (currentNode->data.propertyName==name) {
                 prev->nextNode=currentNode->nextNode;
-                if (currentNode==tailNode) tailNode=prev->nextNode;
+                if (currentNode==tailNode) tailNode=prev;
                 if (playerNode==currentNode) playerNode=prev->nextNode;
                 delete currentNode;
                 nodeCount--;
@@ -181,3 +181,41 @@ public:
         }while (currentNode!=headNode);
         return matches;
     }
+    int countSpaces() {
+        if (headNode==nullptr) {
+            return 0;
+        }
+        int count=0;
+        Node<T>* currentNode=headNode;
+        do {
+            count++; currentNode=currentNode->nextNode;
+        }
+        while(currentNode!=headNode);
+        return count;
+    }
+    void clear() {
+        if (tailNode!=nullptr){
+            tailNode->nextNode=nullptr;
+        }
+        Node<T>* currentNode=headNode;
+        while (currentNode!=nullptr) {
+            Node<T>* nextNode=currentNode->nextNode;
+            delete currentNode;
+            currentNode=nextNode;
+        }
+        headNode=nullptr;
+        tailNode=nullptr;
+        playerNode=nullptr;
+        nodeCount=0;
+        passGoCount=0;
+    }
+};
+int rollDice2to12() {
+    return(rand()%6+1)+(rand()%6+1);
+}
+int main() {
+    srand(static_cast<unsigned>(time(nullptr)));
+    CircularLinkedList<MonopolySpace> board;
+}
+
+
