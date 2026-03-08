@@ -91,7 +91,7 @@ public:
             cout<<"Empty vector"<<endl;
         }
         int added=0;
-        for (int i=0;i<values.size();i++) {
+        for (int i=0;i<(int)values.size();i++) {
             if (!addSpace(values[i])) break;
             added++;
         }
@@ -99,7 +99,7 @@ public:
     }
     void movePlayer(int steps) {
         if (headNode==nullptr) {
-            cout<<"movePlayer unwritten"<<endl;
+            cout<<"Empty Board"<<endl;
             return;
         }
         for (int i=0;i<steps;i++) {
@@ -114,7 +114,7 @@ public:
     }
     void printFromPlayer(int count) {
         if (playerNode==nullptr) {
-            cout<<"printFromPlayer unwritten"<<endl;
+            cout<<"Empty Board"<<endl;
             return;
         }
         int limit=(count<MAX_SPACES)?count:MAX_SPACES;
@@ -124,5 +124,28 @@ public:
             currentNode->data.print();
             cout<<endl;
             currentNode=currentNode->nextNode;
+        }
+    }
+    bool removeByName(string name) {
+        if (headNode==nullptr) {
+            cout<<"Empty Board"<<endl;
+            return false;
+        }
+        if (headNode==tailNode) {
+            if (headNode->data.propertyName==name) {
+                delete headNode;
+                headNode=nullptr;
+                tailNode=nullptr;
+                playerNode=nullptr;
+                nodeCount--;
+                return true;
+            }
+            return false;
+            }
+        if (headNode->data.propertyName==name) {
+            Node<T>* currentNode=headNode;
+            headNode=headNode->nextNode;
+
+        }
         }
     }
