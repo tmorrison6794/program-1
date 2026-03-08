@@ -10,3 +10,14 @@ class and it works as intended now.
 Commits: Fixed misplaced bracket, found the issue before committing.
 
 
+
+
+Entry 2
+Date: 2026-03-07
+Entry Type: Engineering Decision Takse
+Task Worked On: Core C
+Issue or Decision: Wasn't sure how to detect when the player will pass GO when moving
+Error message / Symptom: N/A
+Fix /  Resolution: Used if(playerNode==headNode) after every line of the for loop. This will detect GO
+via pointer comparison which is what is required since I needed to use traversal logic.
+Commits: Used movePlayer w/ GO detection.
