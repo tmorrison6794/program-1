@@ -141,11 +141,43 @@ public:
                 return true;
             }
             return false;
-            }
+        }
         if (headNode->data.propertyName==name) {
             Node<T>* currentNode=headNode;
             headNode=headNode->nextNode;
-
+            tailNode->nextNode=headNode;
+            if (playerNode==currentNode) playerNode=headNode;
+            delete currentNode;
+            nodeCount--;
+            return true;
         }
+        Node<T>* prev=headNode;
+        Node<T>* currentNode=prev->nextNode;
+        while (currentNode!=headNode) {
+            if (currentNode->data.propertyName==name) {
+                prev->nextNode=currentNode->nextNode;
+                if (currentNode==tailNode) tailNode=prev->nextNode;
+                if (playerNode==currentNode) playerNode=prev->nextNode;
+                delete currentNode;
+                nodeCount--;
+                return true;
+            }
+            prev=currentNode;
+            currentNode=currentNode->nextNode;
         }
+        return false;
+    }
+    vector<string> findByColor(string color) {
+        vector<string> matches;
+        if (headNode==nullptr) {
+            return matches;
+        }
+        Node<T>* currentNode=headNode;
+        do {
+            if (currentNode->data.propertyColor==color) {
+                matches.push_back(currentNode->data.propertyName);
+            }
+            currentNode=currentNode->nextNode;
+        }while (currentNode!=headNode);
+        return matches;
     }

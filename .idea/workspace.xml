@@ -24,7 +24,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea34e40d-67e1-45de-8ed5-3e596ed829ce" name="Changes" comment="Commit #7 March 7th">
+    <list default="true" id="ea34e40d-67e1-45de-8ed5-3e596ed829ce" name="Changes" comment="Commit #9 March 8th">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/program_1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/program_1.cpp" afterDir="false" />
     </list>
@@ -95,6 +95,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmake-build-debug/CMakeFiles" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="program_1.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled3" TARGET_NAME="program_1.cpp" CONFIG_NAME="program_1.cpp">
       <option name="sourceFile" value="cmake-build-debug/program_1.cpp" />
@@ -125,7 +130,7 @@
       <workItem from="1772647811399" duration="1725000" />
       <workItem from="1772762789592" duration="1972000" />
       <workItem from="1772951232676" duration="427000" />
-      <workItem from="1773008827670" duration="1854000" />
+      <workItem from="1773008827670" duration="3106000" />
     </task>
     <task id="LOCAL-00001" summary="Commit test Feb 22nd">
       <option name="closed" value="true" />
@@ -183,7 +188,23 @@
       <option name="project" value="LOCAL" />
       <updated>1772951651133</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit #8 March 8th">
+      <option name="closed" value="true" />
+      <created>1773010831679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773010831680</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Commit #9 March 8th">
+      <option name="closed" value="true" />
+      <created>1773011049109</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1773011049109</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +223,9 @@
     <MESSAGE value="Commit #5 March 4th" />
     <MESSAGE value="Commit #6 March 5th" />
     <MESSAGE value="Commit #7 March 7th" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit #7 March 7th" />
+    <MESSAGE value="Commit #8 March 8th" />
+    <MESSAGE value="Commit #9 March 8th" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #9 March 8th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
