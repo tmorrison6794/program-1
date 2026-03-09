@@ -216,6 +216,18 @@ int rollDice2to12() {
 int main() {
     srand(static_cast<unsigned>(time(nullptr)));
     CircularLinkedList<MonopolySpace> board;
-}
+    vector<MonopolySpace> spaces;
+    spaces.push_back(MonopolySpace("GO", "NONE", 0,0));
+    spaces.push_back(MonopolySpace("MEDITERRANEAN AVE", "BROWN", 60,2));
+    spaces.push_back(MonopolySpace("COMMUNITY CHEST", "NONE", 0,0));
+    spaces.push_back(MonopolySpace("BALTIC AVE","BROWN",60,4));
+    spaces.push_back(MonopolySpace("INCOME TAX", "NONE",0,200));
+    spaces.push_back(MonopolySpace("READING RAILROAD", "RAILROAD",200,0));
+    spaces.push_back(MonopolySpace("ORIENTAL AVE","LightBlue",100,6));
+    spaces.push_back(MonopolySpace("CHANCE","NONE",0,0));
+
+
+
+
 
 
