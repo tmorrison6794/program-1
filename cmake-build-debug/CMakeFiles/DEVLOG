@@ -21,3 +21,8 @@ Error message / Symptom: N/A
 Fix /  Resolution: Used if(playerNode==headNode) after every line of the for loop. This will detect GO
 via pointer comparison which is what is required since I needed to use traversal logic.
 Commits: Used movePlayer w/ GO detection.
+
+
+Entry 3
+Date: 2026-03-08
+Entry Type:

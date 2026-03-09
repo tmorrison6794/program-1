@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <cstdlib>
-#include<ctime>
+#include <ctime>
 using namespace std;
 
 
@@ -242,7 +242,7 @@ int main() {
     spaces.push_back(MonopolySpace("CHANCE","NONE",0,0));
     spaces.push_back(MonopolySpace("INDIANA AVE","RED",220,18));
     spaces.push_back(MonopolySpace("ILLINOIS AVE","RED",240,20));
-    spaces.push_back(MonopolySpace("B. % O. RAILROAD","RAILROAD",200,0));
+    spaces.push_back(MonopolySpace("B. & O. RAILROAD","RAILROAD",200,0));
     spaces.push_back(MonopolySpace("ATLANTIC AVE", "YELLOW", 260, 22));
     spaces.push_back(MonopolySpace("VENTNOR AVE","YELLOW",260,22));
     spaces.push_back(MonopolySpace("WATER WORKS","UTILITY",150,0));
@@ -257,6 +257,26 @@ int main() {
     spaces.push_back(MonopolySpace("PARK PL","BLUE",350,35));
     spaces.push_back(MonopolySpace("LUXURY TAX","NONE",0,100));
     spaces.push_back(MonopolySpace("BOARDWALK","BLUE",400,50));
+    board.addMany(spaces);
+    for (int turn=1;turn<=10;turn++) {
+        int roll=rollDice2to12();
+        cout<<"\nTurn "<<turn<<" | Rolled: "<<roll<<endl;
+        board.movePlayer(roll);
+        cout<<"Board view from player (next 5 spaces):" <<endl;
+        board.printFromPlayer(5);
+        cout<<"Times passed GO so far:"<<board.getPassGoCount()<<endl;
+    }
+    board.removeByName("MEDITERRANEAN AVE");
+    vector<string> pinkProps=board.findByColor("PINK");
+    cout<<"\nPink properties:"<<endl;
+    for (int i=0;i<(int)pinkProps.size();i++) {
+        cout<<" -"<<pinkProps[i]<<endl;
+
+    }
+    return 0;
+}
+
+
 
 
 
