@@ -4,7 +4,8 @@ Entry type: Bug fix
 Task worked on: Core A: Add a Space with Capacity Enforcement
 Issue: I accidentally had the addSpace outside of the brackets of the CircularLinkedList class
 Error message: After using an online compiler, I kept seeing a compile error and the nodeCount was not
-declared. I traced what I had written and found my issue.
+declared.
+What I tried: I traced what I had written and found my issue which was a bracket wasn't placed right.
 Fix/resolution: There was a misplaced bracket and I fixed it by moving my addSpace into the body of the
 class and it works as intended now.
 Commits: Fixed misplaced bracket, found the issue before committing.
@@ -14,15 +15,68 @@ Commits: Fixed misplaced bracket, found the issue before committing.
 
 Entry 2
 Date: 2026-03-07
-Entry Type: Engineering Decision Takse
+Entry Type: Engineering Decision Task
 Task Worked On: Core C
 Issue or Decision: Wasn't sure how to detect when the player will pass GO when moving
 Error message / Symptom: N/A
+What I tried: Seperate counter variable to count how many steps were taken and review it
+with the board size. This would mean I would have to count positions not following pointers.
 Fix /  Resolution: Used if(playerNode==headNode) after every line of the for loop. This will detect GO
 via pointer comparison which is what is required since I needed to use traversal logic.
 Commits: Used movePlayer w/ GO detection.
 
 
+
 Entry 3
 Date: 2026-03-08
-Entry Type:
+Entry Type: Edge Case/Testing Entry
+Task Worked On: Reviewing removeByName on the head node
+Issue or decision: When I removed the GO from the board the circular linked list wasn't working and
+caused printFromPlayer to loop infinitely.
+What I tried: Updating the headNode to the next one after it got deleted but didn't update
+tailNode->nextNode.
+Fix: Put a check to see when the node is deleted to be sure that it's the head. Then I fixed the
+circular link via tailNode->nextNode=headNode so it would not run infinitely.
+Commit(s): Head fixing in removeByName in order to fix the circular link.
+
+
+Entry 4
+Date: 2026-03-08
+Entry Type: Bug Fix
+Task Worked On: "clear" function, making sure it deleted all nodes
+Issue Or Decision: When I tried deleing nodes in the list, the program would crash
+since the list was circular and the tailNode->nextNode points to the headNode
+which leads to the nullptr being hit. This means that it would continue to delete
+memory.
+Error: Program would crash/looped when "clear" was called.
+What I tried: Went through looping/deleting nodes with while(currentNode!=nullptr)
+but the last node points back to the head and not nulltr, the loop didn't stop.
+Fix: Broke the first cycle with tailnode->nextNode=nullptr which made the circular list
+into a normal linked list for a second which makes the loop stop at nullptr.
+Commits: Repaired clear function by breaking the circular link before nodes were deleted.
+
+
+Entry 5
+Date: 2026-03-08
+Entry Type: Engineering Decision
+Task Worked On: Board Construction
+Issue or Decision: Used hardcoding to add each space on the board rather than using data froma file.
+Hard coding made it easier to have less mistakes in the process of creating the board.
+What I tried: Pulled up a monopoly board to get the correct order, and pulled up the price
+of the spot and rent to make sure I got it right.
+Final Decision: Individually put each spot in order of the entire board. I only made it that
+a player bought the spot and didn't have any houses or anything like that for simplicity.
+Commits: Hard coded all 40 spots to create the board.
+
+
+Entry 6
+Date: 2029-03-08
+Entry type: Bug Fix
+Task Worked On: Board Construction
+Issue: Railroad name was causing an issue
+Symptom: When you called removeByName("B&O RAILROAD") it would return false
+since the string being stored in the node didn't match the search string.
+What I Tried: Noticed that it would return false and the space wasns't removed which
+meant that the node was still on the board.
+Fix: Changed the name to "B&O RAILROAD" so the name that got stored would match calls.
+Commits: Fixed a RAILROAD name when creating the board.

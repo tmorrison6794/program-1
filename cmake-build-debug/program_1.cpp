@@ -242,7 +242,7 @@ int main() {
     spaces.push_back(MonopolySpace("CHANCE","NONE",0,0));
     spaces.push_back(MonopolySpace("INDIANA AVE","RED",220,18));
     spaces.push_back(MonopolySpace("ILLINOIS AVE","RED",240,20));
-    spaces.push_back(MonopolySpace("B. & O. RAILROAD","RAILROAD",200,0));
+    spaces.push_back(MonopolySpace("B&O RAILROAD","RAILROAD",200,0));
     spaces.push_back(MonopolySpace("ATLANTIC AVE", "YELLOW", 260, 22));
     spaces.push_back(MonopolySpace("VENTNOR AVE","YELLOW",260,22));
     spaces.push_back(MonopolySpace("WATER WORKS","UTILITY",150,0));
