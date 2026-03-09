@@ -223,9 +223,40 @@ int main() {
     spaces.push_back(MonopolySpace("BALTIC AVE","BROWN",60,4));
     spaces.push_back(MonopolySpace("INCOME TAX", "NONE",0,200));
     spaces.push_back(MonopolySpace("READING RAILROAD", "RAILROAD",200,0));
-    spaces.push_back(MonopolySpace("ORIENTAL AVE","LightBlue",100,6));
+    spaces.push_back(MonopolySpace("ORIENTAL AVE","LIGHTBLUE",100,6));
     spaces.push_back(MonopolySpace("CHANCE","NONE",0,0));
-
+    spaces.push_back(MonopolySpace("VERMONT AVE","LIGHTBLUE",100,6));
+    spaces.push_back(MonopolySpace("CONNECTICUT AVE","LIGHTBLUE",120,8));
+    spaces.push_back(MonopolySpace("IN JAIL/JUST VISITING","NONE",0,0));
+    spaces.push_back(MonopolySpace("ST. CHARLES PLACE","PINK",140,10));
+    spaces.push_back(MonopolySpace("ELECTRIC COMPANY","UTILITY",150,0));
+    spaces.push_back(MonopolySpace("STATES AVE","PINK",140,10));
+    spaces.push_back(MonopolySpace("VIRGINIA AVE","PINK",160,12));
+    spaces.push_back(MonopolySpace("PENNSYLVANIA RAILROAD","RAILROAD",200,0));
+    spaces.push_back(MonopolySpace("ST. JAMES PLACE","ORANGE",180,14));
+    spaces.push_back(MonopolySpace("COMMUNITY CHEST","NONE",0,0));
+    spaces.push_back(MonopolySpace("TENNESSEE AVE","ORANGE",180,14));
+    spaces.push_back(MonopolySpace("NEW YORK AVE","ORANGE",200,16));
+    spaces.push_back(MonopolySpace("FREE PARKING", "NONE",0,0));
+    spaces.push_back(MonopolySpace("KENTUCKY AVE","RED",220,18));
+    spaces.push_back(MonopolySpace("CHANCE","NONE",0,0));
+    spaces.push_back(MonopolySpace("INDIANA AVE","RED",220,18));
+    spaces.push_back(MonopolySpace("ILLINOIS AVE","RED",240,20));
+    spaces.push_back(MonopolySpace("B. % O. RAILROAD","RAILROAD",200,0));
+    spaces.push_back(MonopolySpace("ATLANTIC AVE", "YELLOW", 260, 22));
+    spaces.push_back(MonopolySpace("VENTNOR AVE","YELLOW",260,22));
+    spaces.push_back(MonopolySpace("WATER WORKS","UTILITY",150,0));
+    spaces.push_back(MonopolySpace("MARVIN GARDENS","YELLOW",280,24));
+    spaces.push_back(MonopolySpace("GO TO JAIL", "NONE",0,0));
+    spaces.push_back(MonopolySpace("PACIFIC AVE","GREEN",300,26));
+    spaces.push_back(MonopolySpace("NORTH CAROLINA AVE","GREEN",300,26));
+    spaces.push_back(MonopolySpace("COMMUNITY CHEST","NONE",0,0));
+    spaces.push_back(MonopolySpace("PENNSYLVANIA AVE","GREEN",320,28));
+    spaces.push_back(MonopolySpace("SHORT LINE","RAILROAD",200,0));
+    spaces.push_back(MonopolySpace("CHANCE","NONE",0,0));
+    spaces.push_back(MonopolySpace("PARK PL","BLUE",350,35));
+    spaces.push_back(MonopolySpace("LUXURY TAX","NONE",0,100));
+    spaces.push_back(MonopolySpace("BOARDWALK","BLUE",400,50));
 
 
 
